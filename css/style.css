@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 16%;
+    height: 100vh;
+    background: black;
+    float: left;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.nav_img{
+    width: 100%;
+    height: 100px;
+}
+.nav_block{
+    width: 100%;
+    height: 330px;
+    color: white;
+}
+.nav_text{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.nav_search_block{
+    width: 100%;
+    height: 100px;
+}
+.nav_contacts{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+.contacts_img1{
+    width: 14.9%;
+    height: 10%;
+}
+.nav_search{
+    width: 83%;
+    height: 30%;
+    border: 1px solid gray;
+}
+button{
+    height: 30%;
+}
+.box{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 84%;
+    height: 930px;
+    float: right;
+    background: rgb(70, 70, 70);
+}
+header{
+    width: 100%;
+    height: 930px;
+    background: url(/img/header1.jpg);
+    background-size: 100% 100%;
+    
+}
+.header_section{
+    width: 100%;
+    height: 30px;
+}
+.header_p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.header_h1{
+    font-size: 50px;
+    color: gray;
+    padding-top: 700px;
+    padding-left: 10%;
+}
+.section_proveb{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    background: rgb(70, 70, 70);
+}
+.proveb_text{
+    color: white;
+    font-size: 100px;
+    padding-left: 32%;
+    padding-top: 50px;
+}
+.section_proveb_name{
+    font-size: 30px;
+    background: yellow;
+    text-align: center;
+    width: 10%;
+    height: 25px;
+    margin: 0 auto;
+}
+.about_me{
+    width: 100%;
+    height: 300px;
+    background: black;
+}
+.about_me_text{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+}
+.my_skills{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    background: rgb(70, 70, 70);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.name_block2{
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.class_text{
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+.skills_text{
+    width: 50%;
+    height: 300px;
+}
+li{
+    font-size: 25px;
+    margin-top: 17px;
+    margin-left: 5%;
+    color: white;
+}
+.li1{
+    margin-left: 10%;
+}
+.skills_block{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.my_programming_skills{
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+}
+.circle_block{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.circle1{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: yellow;
+    background: linear-gradient(to bottom, yellow 50%, black 50%);
+}
+.circle2{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: yellow;
+    background: linear-gradient(to bottom, yellow 80%, black 20%);
+}
+.circle3{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: yellow;
+    background: linear-gradient(to top, black 70%, yellow 30%);
+}
+.my_works_block{
+    width: 100%;
+    height: 1000px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.work1_block{
+    width: 45%;
+    height: 400px;
+    background: rgb(70, 70, 70);
+    transition: 1s;
+    background: url(/img/work1.png);
+    background-size: 100% 100%;
+}
+.work2_block{
+    width: 45%;
+    height: 400px;
+    background: rgb(70, 70, 70);
+    transition: 1s;
+    background: url(/img/work2.png);
+    background-size: 100% 100%;
+}
+.work3_block{
+    width: 45%;
+    height: 400px;
+    background: rgb(70, 70, 70);
+    transition: 1s;
+    background: url(/img/work3.png);
+    background-size: 100% 100%;
+}
+.work4_block{
+    width: 45%;
+    height: 400px;
+    background: rgb(70, 70, 70);
+    transition: 1s;
+    background: url(/img/work4.png);
+    background-size: 100% 100%;
+}
+.fl:hover{
+    width: 47%;
+    height: 450px;
+}
+.work1_text1{
+    padding-top: 7%;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+.work1_text2{
+    padding-top: 7%;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+.work1_img{
+    width: 100%;
+    height: 450px;
+}
+.nav_block a{
+    color: white;
+    text-decoration: none;
+}
+.my_works_block a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

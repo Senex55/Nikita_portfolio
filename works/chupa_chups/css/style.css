@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 1024px;
+    margin: 0 auto;
+}
+header{
+    width: 1024px;
+    height: 150px;
+    background: red;
+}
+.header__img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+}
+.header__text{
+    color: white;
+    padding: 10px;
+}
+nav{
+    width: 1024px;
+    height: 50px;
+    background: linear-gradient(red, rgb(235, 139, 139));
+}
+.nav__item:hover{
+    background: yellow;
+    
+}
+.nav__item{
+    width: 190px;
+    height: 30px;
+    padding: 0px;
+    background: rgb(254, 179, 179);
+    float: left;
+    margin-left: 12px;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+main{
+    width: 1024px;
+    height: 520px;
+    background: rgb(235, 139, 139);
+}
+section{
+    width: 330px;
+    height: 500px;
+    background: white;
+    float: left;
+    margin-left: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 30px -3px rgba(0,0,0,0.75);
+    padding: 10px;
+}
+.section__img{
+    width: 200px;
+    height: 230px;
+    display: block;
+    margin: 0 auto;
+
+}
+.section__text{
+    padding-top: 15px;
+}
+.section__price{
+    color: red;
+    font-size: 35px;
+    padding-top: 50px;
+}
+.section__button{
+    width: 200px;
+    display: block;
+    border-radius: 10px;
+    background: rgb(233, 141, 141);
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;;
+}
+.section__button:hover{
+    background: rgb(243, 149, 149);
+}
+aside{
+    width: 1024px;
+    height: 70px;
+    background: rgb(235, 139, 139);
+}
+.number{
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    width: 1024px;
+    height: 70px;
+    clear: both;
+    background: rgb(237, 124, 124);
+}

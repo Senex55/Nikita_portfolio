@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <nav>
+                <a class="nav_a" href="">Головна</a>
+                <a class="nav_a" href="">Нащі Переваги</a>
+                <a class="nav_a" href="">Новини Та Акції</a>
+                <a class="nav_a" href="">Контакти</a>
+                <a class="nav_a" href="">Записатися</a>
+            </nav>
+            <img class="header_img" src="img/headertxt" alt="">
+        </header>
+        <section class="liberties1">
+            <div class="liberties1_section">
+                <div class="tag_line">
+                    <h2 class="about_h1">Стрижка в нас<br> це вигідно!</h2>
+                        <p class="about_p">Чоловіча стрижка вимагає точний<br> підхід. Звернемося до статистики:</p>
+                        <p class="false">* — наведені дані брехня</p>
+                </div>
+                <div class="descript grn">
+                    <h2>1 500*</h2>
+                    <p>гривень вкладень</p>
+                </div>
+                <div class="descript skill_master">
+                    <h2>7 200</h2>
+                    <p>секунд часу майстра</p>
+                </div>
+                <div class="descript trimmed">
+                    <h2>90 000</h2>
+                    <p>постриженого волосся</p>
+                </div>
+                <div class="descript likes">
+                    <h2>500 000*</h2>
+                    <p>лайків та компліментів</p>
+                </div>
+            </div>
+        </section>
+        <section class="liberties2">
+            <div class="liberties2_block1">
+                <img class="liberties2_img" src="img/img1.png" alt="">
+                <h2>Швидко</h2>
+                <p>Ми робимо свою роботу швидко!<br>
+                    Дві години пролетять непомітно<br>
+                    і ви - щасливий володар<br>
+                    стильної стрижки-хвилинки</p>
+            </div>
+            <div class="liberties2_block2">
+                <img class="liberties2_img" src="img/img2.png" alt="">
+                <h2>Круто</h2>
+                <p>Забудьте, як ви стриглись<br>
+                    раніше. Ми зробимо з вас<br>
+                    зірку футболу або кіно.<br>
+                    Принаймні зовні.</p>
+            </div>
+            <div class="liberties2_block1">
+                <img class="liberties2_img" src="img/img3.png" alt="">
+                <h2>Дорого</h2>
+                <p>Наші майстри – професіонали<br>
+                    своєї справи не можуть коштувати<br>
+                    дешево. До того ж, хіба ціна не<br>
+                    дає певного статусу?</p>
+            </div>
+        </section>
+        <section class="block1">
+            <article class="ar2">
+                <div class="article_text1">НОВОСТИ И АКЦИИ</div>
+                <div class="article_text2">Показать все</div>
+            </article>
+            <article class="ar1">
+                <div class="nav_block1">
+                    <img class="date_img" src="img/date1.png" alt="">
+                    <p class="date_text">Нам нарешті завезли<br> комбучу!Тепер ви можете<br> випити стаканчик під час<br> стрижки.</p>
+                </div>
+                <div class="nav_block1">
+                    <img class="date_img" src="img/date2.png" alt="">
+                    <p class="date_text">У нашій команді поповнення,<br> Борис «Бритва» Стригунець,<br> поповнив наші стрункі лави.<br> Поспішайте записатися!</p>
+                </div>
+                <div class="nav_block1">
+                    <img class="date_img" src="img/date3.png" alt="">
+                    <p class="date_text">Все дорожчає, а наші зачіски<br> немає! Як так? Приходьте,<br> підстрижетесь і дізнаєтеся, в<br> чому тут каверза!</p>
+                </div>
+            </article>
+        </section>
+        <div class="box1">
+            <div class="gallery">
+                <div class="gallery_headline">
+                    <h2>ВІДГУКИ ПРО НАС</h2>
+                    <input type="button" value="ЗАЛИШИТИ СВІЙ">
+                </div>
+                <div class="arrow_left" onclick="fun2()"></div>
+                <div class="gallery_box">
+                    <div class="gallery_item1">
+                        <img src="" alt="">
+                        <img class="img_people" src="img/people.png" alt="">
+                        <h2 class="item_h2">Тревіс Баркер</h2>
+                        <p class="people_text2">Дякую за лисину!<br> Був проїздом у Франківську,<br> заскочив поголитися,<br> щоб було видно нове татуювання!</p>
+                    </div>
+                    <div class="gallery_item2"></div>
+                    <div class="gallery_item3"></div>
+                </div>
+                <div class="arrow_right" onclick="fun1()">
+                </div>
+                <div class="gallery_number">1/3</div>
+            </div> 
+        </div>
+        <script>
+            let margin=0
+            let element=1
+            let num=document.querySelector(".gallery_number")
+            function fun1(){
+            let a=document.querySelector(".gallery_box>div")
+            if(element>=3){
+                    a.style.marginLeft=margin+"%"
+            }
+            else{
+                    element++
+                    margin-=100
+                    a.style.marginLeft=margin+"%"
+                    a.style.transition="1s"
+                    num.innerText=element+"/3"
+            }   
+        }
+            function fun2(){
+            let a=document.querySelector(".gallery_box>div")
+            if(element<=1){
+                    a.style.marginLeft=margin+"%"
+            }
+            else{
+                    element--
+                    margin+=100
+                    a.style.marginLeft=margin+"%"
+                    a.style.transition="1s"
+                    num.innerText=element+"/3"
+            }
+    
+    }
+    </script>
+        <footer>
+            <div class="footer_block1">
+                <h3>Барбершоп Бородинський</h3>
+                <p>м.Івано-Франківськ, вул. Бельведерська 19/8<br> Тел.: +38 (097) 045-50-67</p>
+            </div>
+            <div class="footer_block2">
+                <p class="footer_text1">Давайте Дружить!</p>
+                    <div class="footer_block4">
+                        <div class="footer_block5">B</div>
+                        <div class="footer_block5">F</div>
+                        <div class="footer_block5">
+                            <img class="footer_img" src="/img/inst.png" alt="">
+                        </div>
+                    </div>
+            </div>
+            <div class="footer_block3">
+                <h2>Сверстано</h2>
+                <h3>Никита Сеник</h3>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
